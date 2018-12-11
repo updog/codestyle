@@ -1,44 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CodeStyle
+A web application that makes customized suggestions to improve the legibility of code. Currently supports Python and will suggest formatting tips such as proper code spacing and descriptive variable names.
 
-## Available Scripts
+## Motivation
+CodeStyle aims to help people overcome a fundamental barrier to learning programming: good coding style.
 
-In the project directory, you can run:
+## Build status
+Build status of continus integration i.e. travis, appveyor etc. Ex. -
 
-### `npm start`
+## Code style
+If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Screenshots
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Tech/framework used
+Built with the latest version of React as a frontend and utilizes Flask as a backend.
 
-### `npm test`
+## Features
+What makes your project stand out?
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Code Example
+Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
-### `npm run build`
+## Installation
+To build the latest working version on your local machine, `cd` to the project directory.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* `cd` into the `static` directory and run `npm run watch` to let `webpack` build the web app
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* `cd` into the `server` directory and then run `python server.py` to start the web server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once done, navigate to `localhost:5000` in your favorite browser to open the application.
 
-### `npm run eject`
+## API Reference
+Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Tests
+Describe and show how to run the tests with code examples.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to use?
+If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contribute
+Let people know how they can contribute into your project. A contributing guideline will be a big plus.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Credits
+Made by Gabriella Roman and Christopher Trinh as part of the Spark! Fellowship at Boston University. `pycodestyle` can be found at its [Github repo](https://github.com/PyCQA/pycodestyle).
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+A short snippet describing the license (MIT, Apache etc)

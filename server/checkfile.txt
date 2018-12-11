@@ -1,0 +1,6 @@
+codefile.py:2:3: E111 indentation is not a multiple of four
+  print('this is a function')
+  ^
+codefile.py:5:6: W292 no newline at end of file
+foo()
+     ^
