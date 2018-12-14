@@ -34,7 +34,8 @@ export default class Send extends React.Component {
         <Button bsSize="small" bsStyle="success" onClick={this.postPythonText}>
           Send code!
         </Button>
-        <p>{this.state.suggestions}</p>
+        <hr/>
+        <textarea readOnly value={this.state.suggestions} />
       </div>
     )
   }

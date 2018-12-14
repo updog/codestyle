@@ -9,3 +9,8 @@
   border-radius: 15px;
   border: 4px solid #73AD21;
 }
+
+textarea {
+  height: 300px;
+  width: 750px;
+}

@@ -4,7 +4,7 @@ from flask_restful import Resource, Api
 import random
 import pycodestyle
 
-app = Flask(__name__, static_folder="../static/dist", template_folder="../static")
+app = Flask(__name__, static_folder="static/dist", template_folder="static")
 api = Api(app)
 
 class pyCode(Resource):
