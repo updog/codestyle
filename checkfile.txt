@@ -1,9 +1,132 @@
-codefile.py:2:3: E111 indentation is not a multiple of four
-  print('this is a function')
-  ^
-codefile.py:4:1: E305 expected 2 blank lines after class or function definition, found 1
-foo()
-^
-codefile.py:4:6: W292 no newline at end of file
-foo()
+codefile.py:2:6: E201 whitespace after '{'
+x = {  'a':37,'b':42,
      ^
+codefile.py:2:11: E231 missing whitespace after ':'
+x = {  'a':37,'b':42,
+          ^
+codefile.py:2:14: E231 missing whitespace after ','
+x = {  'a':37,'b':42,
+             ^
+codefile.py:2:18: E231 missing whitespace after ':'
+x = {  'a':37,'b':42,
+                 ^
+codefile.py:4:1: E128 continuation line under-indented for visual indent
+'c':927}
+^
+codefile.py:4:4: E231 missing whitespace after ':'
+'c':927}
+   ^
+codefile.py:11:2: E111 indentation is not a multiple of four
+ z = 'hello ' 'world'
+ ^
+codefile.py:13:2: E111 indentation is not a multiple of four
+ world = 'world'
+ ^
+codefile.py:14:2: E111 indentation is not a multiple of four
+ a = 'hello {}'.format(world)
+ ^
+codefile.py:15:2: E111 indentation is not a multiple of four
+ f = rf'hello {world}'
+ ^
+codefile.py:17:1: E128 continuation line under-indented for visual indent
+and that): y = 'hello ''world'#FIXME: https://github.com/ambv/black/issues/26
+^
+codefile.py:17:10: E701 multiple statements on one line (colon)
+and that): y = 'hello ''world'#FIXME: https://github.com/ambv/black/issues/26
+         ^
+codefile.py:17:31: E261 at least two spaces before inline comment
+and that): y = 'hello ''world'#FIXME: https://github.com/ambv/black/issues/26
+                              ^
+codefile.py:17:31: E262 inline comment should start with '# '
+and that): y = 'hello ''world'#FIXME: https://github.com/ambv/black/issues/26
+                              ^
+codefile.py:18:1: E302 expected 2 blank lines, found 0
+class Foo  (     object  ):
+^
+codefile.py:18:13: E201 whitespace after '('
+class Foo  (     object  ):
+            ^
+codefile.py:18:25: E202 whitespace before ')'
+class Foo  (     object  ):
+                        ^
+codefile.py:19:3: E111 indentation is not a multiple of four
+  def f    (self   ):
+  ^
+codefile.py:19:8: E211 whitespace before '('
+  def f    (self   ):
+       ^
+codefile.py:19:19: E202 whitespace before ')'
+  def f    (self   ):
+                  ^
+codefile.py:20:11: E271 multiple spaces after keyword
+    return       37*-2
+          ^
+codefile.py:21:3: E111 indentation is not a multiple of four
+  def g(self, x,y=42):
+  ^
+codefile.py:21:3: E301 expected 1 blank line, found 0
+  def g(self, x,y=42):
+  ^
+codefile.py:21:16: E231 missing whitespace after ','
+  def g(self, x,y=42):
+               ^
+codefile.py:22:7: E111 indentation is not a multiple of four
+      return y
+      ^
+codefile.py:23:1: E302 expected 2 blank lines, found 0
+def f  (   a: List[ int ]) :
+^
+codefile.py:23:6: E211 whitespace before '('
+def f  (   a: List[ int ]) :
+     ^
+codefile.py:23:9: E201 whitespace after '('
+def f  (   a: List[ int ]) :
+        ^
+codefile.py:23:20: E201 whitespace after '['
+def f  (   a: List[ int ]) :
+                   ^
+codefile.py:23:24: E202 whitespace before ']'
+def f  (   a: List[ int ]) :
+                       ^
+codefile.py:23:27: E203 whitespace before ':'
+def f  (   a: List[ int ]) :
+                          ^
+codefile.py:24:3: E111 indentation is not a multiple of four
+  return      37-a[42-u :  y**3]
+  ^
+codefile.py:24:9: E271 multiple spaces after keyword
+  return      37-a[42-u :  y**3]
+        ^
+codefile.py:24:24: E203 whitespace before ':'
+  return      37-a[42-u :  y**3]
+                       ^
+codefile.py:25:1: E302 expected 2 blank lines, found 0
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+^
+codefile.py:25:42: E231 missing whitespace after ','
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                         ^
+codefile.py:25:53: E231 missing whitespace after ','
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                                    ^
+codefile.py:25:71: E231 missing whitespace after ','
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                                                      ^
+codefile.py:25:77: E231 missing whitespace after ':'
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                                                            ^
+codefile.py:25:80: E501 line too long (90 > 79 characters)
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                                                               ^
+codefile.py:25:82: E252 missing whitespace around parameter equals
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                                                                 ^
+codefile.py:25:83: E252 missing whitespace around parameter equals
+def very_important_function(template: str,*variables,file: os.PathLike,debug:bool=False,):
+                                                                                  ^
+codefile.py:28:6: E111 indentation is not a multiple of four
+     ...
+     ^
+codefile.py:30:1: E305 expected 2 blank lines after class or function definition, found 0
+custom_formatting = [
+^

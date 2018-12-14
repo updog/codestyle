@@ -31,7 +31,7 @@ export default class Send extends React.Component {
     return (
       <div>
         <hr/>
-        <Button bsSize="small" bsStyle="success" onClick={this.postPythonText}>
+        <Button bsSize="small" bsStyle="info" onClick={this.postPythonText}>
           Send code!
         </Button>
         <hr/>

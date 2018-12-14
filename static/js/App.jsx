@@ -73,9 +73,9 @@ class App extends Component {
   render() {
     return (
       <div className="desc">
-        <h1>LEARN GOOD CODE STYLE</h1>
-        <h3>Supports Python</h3>
-        <p>[app name], created by Gabriella Roman (@gsroman) and
+        <h1>CodeStyle</h1>
+        <h3>Learn Good Code Style for Python</h3>
+        <p>CodeStyle, created by Gabriella Roman (@gsroman) and
           Christopher Trinh (@ctrinh), helps people overcome a
           fundamental barrier to learning programming: understanding
           how to correctly style their code when they write it.
@@ -93,6 +93,7 @@ class App extends Component {
         />
         <p>{console.log(this.state.value)}</p>
         <Send text={this.state.value} />
+
       </div>
     );
   }

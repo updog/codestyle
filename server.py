@@ -38,13 +38,24 @@ def hello():
 
 @app.route("/send", methods=['POST'])
 def send():
-    # print(request.args)
-    # print(request.data)
-    # print(request.values)
-    # print(dict(request.form))
-    # d = dict(request.form)
+    print(request.args)
+    print(request.data)
+    print(request.values)
+    print(request.get_data(as_text=True))
+    print(dict(request.form))
+    print(request.data)
+    # print(request.get_json(force=True))
+    print('try this: ', request.form)
+    d = dict(request.form)
     for key in dict(request.form).keys():
-        make_file(key)
+        print(key)
+        print(dict(request.form)[key][0])
+        if (dict(request.form)[key][0] != ''):
+            ret1 = (key + '=')
+        else:
+            ret1 = key
+        ret2 = dict(request.form)[key][0]
+        make_file(ret1 + ret2)
         fchecker = pycodestyle.Checker('codefile.py', show_source=True)
         file_errors = fchecker.check_all()
         res = check_file()
